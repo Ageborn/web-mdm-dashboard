@@ -22,7 +22,7 @@ services:
       red:
         aliases:
           - dashnode
-        ipv4_address: 172.27.0.31
+        ipv4_address: 173.212.246.106
   # web server
   dashboard-apache:
     build:
@@ -44,7 +44,7 @@ services:
       - ${HOST_SERVER_WEB_PORT_APACHE}:80
     networks:
       red:
-        ipv4_address: 172.27.0.32
+        ipv4_address: 173.212.246.106
 # In this section we defined the network interface
 networks:
   red:
@@ -54,5 +54,5 @@ networks:
     ipam:
       driver: default
       config:
-      - subnet: 172.27.0.0/24
+      - subnet: 173.212.246.106/24
 # End of file
